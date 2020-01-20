@@ -10,7 +10,11 @@ const publicPath = path.resolve(__dirname, '../public');
 const port = process.env.PORT || 3000;
 
 app.use(express.static(publicPath));
+
 let io = socketIO(server)
+io.on("connection", client => {
+    console.log("Client connected")
+})
 
 server.listen(port, (err) => {
     if (err) throw new Error(err);
