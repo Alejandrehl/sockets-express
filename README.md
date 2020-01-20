@@ -1,9 +1,5 @@
-# Notes:
+Express server ready to execute and serve public folder in the web.
 
-Este es un pequeño servidor de express listo para ejecutarse y servir la carpeta public en la web.
-
-Recuerden que deben de reconstruir los módulos de node con el comando
-
-```
-npm install
-```
+## Setup
+- Clone repo
+- npm install in root folder
