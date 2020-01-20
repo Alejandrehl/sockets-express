@@ -8,3 +8,4 @@ Express server ready to execute and serve public folder in the web.
 ## Libraries
 1. [Nodemon](https://yarnpkg.com/en/package/nodemon)
 2. [Express](https://yarnpkg.com/en/package/express)
+3. [Socket.io](https://www.npmjs.com/package/socket.io)
