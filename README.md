@@ -8,6 +8,7 @@ Express server ready to execute and serve public folder in the web.
 ## Methods
 - .on: Método para escuchar cambios.
 - .emit: Método para emitir cambios. Comunmente se utiliza para enviar objetos, no strings solos o valores booleanos.
+- .broadcast.emit: Método para emitir un cambio/mensaje/etc a todos los clientes activos.
 
 ## Libraries
 1. [Nodemon](https://yarnpkg.com/en/package/nodemon)

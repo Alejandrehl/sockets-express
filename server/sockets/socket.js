@@ -14,12 +14,14 @@ io.on("connection", client => {
 
     // Listen client
     client.on("sendMessage", (data, callback) => {
-        const { user, message } = data;
+        client.broadcast.emit("sendMessage", data)
 
-        if (user) {
-            callback({ message: message})
-        } else {
-            callback({ message: "¡No hay usuario en el request"})
-        }
+        // const { user, message} = data
+
+        // if (user) {
+        //     callback({ message: message})
+        // } else {
+        //     callback({ message: "¡No hay usuario en el request"})
+        // }
     })
 })
