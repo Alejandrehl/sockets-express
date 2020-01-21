@@ -25,8 +25,14 @@ io.on("connection", client => {
     })
 
     // Listen client
-    client.on("sendMessage", data => {
-        console.log(data)
+    client.on("sendMessage", (data, callback) => {
+        const { user, message } = data;
+
+        if (user) {
+            callback({ message: message})
+        } else {
+            callback({ message: "¡No hay usuario en el request"})
+        }
     })
 })
 

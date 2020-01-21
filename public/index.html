@@ -24,6 +24,8 @@
         socket.emit("sendMessage", {
             user: "Alejandro",
             message: "¡Wake up early!"
+        }, res => {
+            console.log(res.message)
         })
 
         // Escuchar información
