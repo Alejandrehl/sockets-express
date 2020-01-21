@@ -15,6 +15,11 @@ let io = socketIO(server)
 io.on("connection", client => {
     console.log("Client connected")
 
+    client.emit("sendMessage", {
+        user: "Administrador",
+        message: "Welcome to my App"
+    })
+
     client.on("disconnect", () => {
         console.log("Client disconnected")
     })

@@ -25,6 +25,11 @@
             user: "Alejandro",
             message: "¡Wake up early!"
         })
+
+        // Escuchar información
+        socket.on("sendMessage", data => {
+            console.log(data)
+        })
     </script>
 </body>
 </html>
